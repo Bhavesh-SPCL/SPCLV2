@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan Planeta Corporation LLP | Precision Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        'raleway': ['Raleway', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-orange': '#f58220',
+                        'brand-orange-dark': '#d97706',
+                        'brand-blue': '#1e293b',
+                        'brand-dark': '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased">
+
+    <!-- Header Navigation -->
+    <header id="header" class="bg-white/95 backdrop-blur fixed w-full z-50 transition-all duration-300 border-b border-slate-100 flex items-center">
+        <div class="container mx-auto px-6 flex justify-between items-center w-full">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sudarshan Planeta Logo" class="h-14 transition-all">
+            </a>
+            <nav class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products & Process</a>
+                <a href="contact.html" class="nav-link">Certifications & Contact</a>
+            </nav>
+            <a href="contact.html#contact-form" class="btn-get-started hidden lg:inline-block">Get a Quote</a>
+            <button id="mobile-menu-button" class="lg:hidden text-2xl text-slate-800 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden fixed w-full bg-white z-40 top-[96px] border-b border-slate-200 shadow-xl">
+        <div class="px-6 py-6 space-y-3">
+            <a href="index.html" class="block px-4 py-2.5 text-slate-800 bg-slate-50 font-semibold rounded">Home</a>
+            <a href="about.html" class="block px-4 py-2.5 text-slate-600 hover:bg-slate-50 rounded">About Us</a>
+            <a href="products.html" class="block px-4 py-2.5 text-slate-600 hover:bg-slate-50 rounded">Products & Process</a>
+            <a href="contact.html" class="block px-4 py-2.5 text-slate-600 hover:bg-slate-50 rounded">Certifications & Contact</a>
+            <a href="contact.html#contact-form" class="block text-center btn-get-started mt-4 mx-4">Get a Quote</a>
+        </div>
+    </div>
+
+    <!-- Hero Showcase Carousel -->
+    <section class="w-full h-screen relative">
+        <div class="swiper-container hero-slider h-full">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide-1">
+                    <div class="container mx-auto px-6 text-center text-white relative z-10 max-w-4xl">
+                        <h1 class="text-4xl md:text-7xl font-extrabold font-raleway mb-6 leading-tight tracking-tight drop-shadow-md">Precision in Motion, Excellence in Engineering</h1>
+                        <p class="text-xl md:text-2xl mb-10 text-slate-200 font-medium">Expert foundry services delivering mission-critical industrial components.</p>
+                        <a href="about.html" class="btn-get-started px-8 py-3.5 text-base">Explore Our Legacy</a>
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide-2">
+                    <div class="container mx-auto px-6 text-center text-white relative z-10 max-w-4xl">
+                        <h1 class="text-4xl md:text-7xl font-extrabold font-raleway mb-6 leading-tight tracking-tight drop-shadow-md">Heavy-Duty Freight Bogies</h1>
+                        <p class="text-xl md:text-2xl mb-10 text-slate-200 font-medium">Engineered for extreme structural integrity, high-capacities, and long hauls.</p>
+                        <a href="products.html" class="btn-get-started px-8 py-3.5 text-base">View Dynamic Technical Specs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next hidden md:flex"></div>
+            <div class="swiper-button-prev hidden md:flex"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Facility Video Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold font-raleway text-brand-dark mb-4 tracking-tight">From Vision to Precision</h2>
+                <p class="text-lg text-slate-500 font-medium">Take a modern industrial journey inside our corporate headquarters and heavy foundry manufacturing operations.</p>
+            </div>
+            <div class="max-w-5xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+                <iframe src="https://www.youtube.com/embed/A1IT1dYZVsY" class="w-full h-full" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Highlights Segment -->
+    <section class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-brand-orange uppercase font-bold tracking-widest text-sm block mb-2">Established Capability</span>
+                    <h2 class="text-3xl md:text-4xl font-bold font-raleway text-brand-dark mb-6 tracking-tight">Engineering Uncompromising Confidence Since 2021</h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Sudarshan Planeta Corporation LLP operates at the cutting edge of raw casting development. We engineer heavy high-precision rolling components critical to national sectors including strategic Railways networks, Defense infrastructure, and major Automotive systems.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="border-l-4 border-brand-orange pl-4">
+                            <h4 class="text-3xl font-bold text-brand-dark">RDSO</h4>
+                            <p class="text-sm text-slate-500 mt-1 font-medium">Approved Vendor Facility</p>
+                        </div>
+                        <div class="border-l-4 border-brand-blue pl-4">
+                            <h4 class="text-3xl font-bold text-brand-dark">Class A</h4>
+                            <p class="text-sm text-slate-500 mt-1 font-medium">Foundry Validation Status</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/gallery-1.jpg" alt="Operations Overview" class="rounded-xl shadow-md object-cover h-48 w-full transition-transform hover:scale-102 duration-300">
+                    <img src="images/gallery-2.jpg" alt="Production Detail" class="rounded-xl shadow-md object-cover h-48 w-full mt-6 transition-transform hover:scale-102 duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="bg-brand-dark text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-800">
+            <div>
+                <h3 class="text-lg font-bold font-raleway mb-4 tracking-wide">Sudarshan Planeta Corporation LLP</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Block 2&3, Revenue Sy no 248/253/2, At Khambhala, Ta-Padadhari, Rajkot - 360110, Gujarat, INDIA.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-md font-bold text-brand-orange uppercase tracking-wider mb-4">Quick Links</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm text-slate-400">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+                    <a href="products.html" class="hover:text-white transition-colors">Products</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-md font-bold text-brand-orange uppercase tracking-wider mb-4">Corporate Inquiries</h4>
+                <p class="text-slate-400 text-sm mb-2"><i class="fas fa-envelope text-brand-orange mr-2"></i> Bhavesh@sudarshanplaneta.com</p>
+                <p class="text-slate-400 text-sm"><i class="fas fa-phone-alt text-brand-orange mr-2"></i> +91 77 990 222 74</p>
+            </div>
+        </div>
+        <p class="text-center text-slate-500 text-xs pt-8">Copyright © 2026 Sudarshan Planeta Corporation LLP - All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', () => {
+            const h = document.getElementById('header');
+            if(window.scrollY > 30) h.classList.add('header-scrolled');
+            else h.classList.remove('header-scrolled');
+        });
+        var swiper = new Swiper('.hero-slider', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000, disableOnInteraction: false }
+        });
+    </script>
+</body>
+</html>
