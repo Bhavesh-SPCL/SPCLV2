@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Infrastructure | Sudarshan Planeta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['system-ui', 'sans-serif'], 'raleway': ['Raleway', 'sans-serif'] },
+                    colors: { 'brand-orange': '#f58220', 'brand-blue': '#1e293b', 'brand-dark': '#0f172a' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased pt-[96px]">
+
+    <header id="header" class="bg-white/95 backdrop-blur fixed top-0 w-full z-50 border-b border-slate-100 flex items-center">
+        <div class="container mx-auto px-6 flex justify-between items-center w-full">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="h-14"></a>
+            <nav class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link active">Products & Process</a>
+                <a href="contact.html" class="nav-link">Certifications & Contact</a>
+            </nav>
+            <a href="contact.html#contact-form" class="btn-get-started hidden lg:inline-block">Get a Quote</a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-brand-dark to-slate-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold font-raleway mb-4 tracking-tight">Heavy Rail Assemblies & Processing</h1>
+            <p class="text-lg text-slate-300">RDSO compliant design optimization built specifically for rugged bulk transit frameworks.</p>
+        </div>
+    </section>
+
+    <!-- Component Technical Breakdown -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mb-24">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/60 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="text-brand-orange font-bold uppercase text-xs tracking-wider block mb-2">Primary Production Class</span>
+                        <h2 class="text-3xl font-bold font-raleway text-brand-dark mb-4">Integrated Freight Bogie System</h2>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            We construct high-integrity outer **Side Frames** and internal dynamic vertical load-bearing **Bolsters**. Combined, they form a unified structural freight matrix designed for structural stability, minimization of frame wear, and absolute derailment protection under intense mechanical pressures.
+                        </p>
+                        <div class="space-y-3">
+                            <h4 class="font-bold text-brand-dark text-sm uppercase tracking-wide">Key Structural Features:</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-center"><i class="fas fa-check text-brand-orange mr-3"></i> High tensile flexibility thresholds under shock loads</li>
+                                <li class="flex items-center"><i class="fas fa-check text-brand-orange mr-3"></i> Advanced corrosion-resistant industrial finish layers</li>
+                                <li class="flex items-center"><i class="fas fa-check text-brand-orange mr-3"></i> 100% precision machined alignment parameters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-slate-100 p-4 rounded-xl border border-slate-200/50 flex items-center justify-center overflow-hidden">
+                        <img src="images/product-bogie.jpg" alt="Full Assembly System" class="rounded-lg object-cover h-[200px] w-full shadow">
+                    </div>
+                    <div class="bg-slate-100 p-4 rounded-xl border border-slate-200/50 flex items-center justify-center overflow-hidden">
+                        <img src="images/product-side-frame.jpg" alt="Side Frame Elements" class="rounded-lg object-cover h-[200px] w-full shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Process Architecture Layout -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-raleway text-brand-dark mb-4">The 4-Step Production Matrix</h2>
+                <p class="text-slate-400 font-medium">Flawless execution path monitored through constant verification loops.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-orange text-white font-bold flex items-center justify-center mx-auto mb-4 shadow">1</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Design Validation</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Developing optimized structural profiles via 3D mechanical element simulations.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-700 text-white font-bold flex items-center justify-center mx-auto mb-4 shadow">2</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Quality Casting</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Executing complex high-tonnage molds via modern foundry system paths.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-700 text-white font-bold flex items-center justify-center mx-auto mb-4 shadow">3</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Precision Machining</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Refining fine tolerances through computerized CNC and vertical VMC machining blocks.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                    <div class="w-10 h-10 rounded-full bg-slate-700 text-white font-bold flex items-center justify-center mx-auto mb-4 shadow">4</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Total QA Review</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Subjecting every casting assembly to intensive destructive and non-destructive checks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
