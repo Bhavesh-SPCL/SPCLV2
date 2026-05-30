@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sudarshan Planeta Corporation LLP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['system-ui', 'sans-serif'],
+                        'raleway': ['Raleway', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-orange': '#f58220',
+                        'brand-blue': '#1e293b',
+                        'brand-dark': '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased pt-[96px]">
+
+    <!-- Header Navigation -->
+    <header id="header" class="bg-white/95 backdrop-blur fixed top-0 w-full z-50 border-b border-slate-100 flex items-center">
+        <div class="container mx-auto px-6 flex justify-between items-center w-full">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="h-14"></a>
+            <nav class="hidden lg:flex items-center space-x-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products & Process</a>
+                <a href="certificates.html" class="nav-link">Certifications</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+            <a href="#contact-portal" class="btn-get-started hidden lg:inline-block">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-gradient-to-r from-brand-dark to-slate-800 text-white py-16">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold font-raleway mb-4 tracking-tight">Connect With Us</h1>
+            <p class="text-lg text-slate-300">Reach out to our executive or engineering team for infrastructure quotes and technical consultations.</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            
+            <!-- Contact Cards & Form Integration -->
+            <div id="contact-portal" class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-200/70 shadow-sm items-stretch mb-16">
+                
+                <!-- Information Block -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 flex flex-col justify-center space-y-8 shadow-sm">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Corporate Touchpoints</h3>
+                        <p class="text-sm text-slate-500">Our administrative and operations headquarters are organized for prompt response management.</p>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-brand-orange text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-sm flex-shrink-0"><i class="fas fa-map-marker-alt text-lg"></i></div>
+                        <div>
+                            <h5 class="font-bold text-slate-800 text-lg">Plant Address</h5>
+                            <p class="text-sm text-slate-600 mt-1 leading-relaxed">Block 2&3, Revenue Sy no 248/253/2, At Khambhala,<br>Ta-Padadhari, Rajkot - 360110, Gujarat, INDIA.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-brand-orange text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-sm flex-shrink-0"><i class="fas fa-envelope text-lg"></i></div>
+                        <div>
+                            <h5 class="font-bold text-slate-800 text-lg">Email Correspondence</h5>
+                            <p class="text-sm text-slate-600 mt-1 font-medium hover:text-brand-orange transition-colors">Bhavesh@sudarshanplaneta.com[cite: 1]</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-brand-orange text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 shadow-sm flex-shrink-0"><i class="fas fa-phone-alt text-lg"></i></div>
+                        <div>
+                            <h5 class="font-bold text-slate-800 text-lg">Direct Call Line</h5>
+                            <p class="text-sm text-slate-600 mt-1 font-medium">+91 77 990 222 74[cite: 1]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Block -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Commercial RFQ Portal</h3>
+                    <p class="text-sm text-slate-500 mb-6">Submit your project details directly into our engineering pipeline.</p>
+                    
+                    <form class="space-y-5">
+                        <div>
+                            <label class="block text-xs text-slate-500 font-bold uppercase mb-1 tracking-wider">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 px-4 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-500 font-bold uppercase mb-1 tracking-wider">Email Address</label>
+                            <input type="email" placeholder="corporate@domain.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 px-4 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-500 font-bold uppercase mb-1 tracking-wider">Detailed Requirements</label>
+                            <textarea rows="4" placeholder="Specify bogie specifications, tonnage criteria, or bulk part requirements..." class="w-full bg-slate-50 border border-slate-200 rounded-xl py-3 px-4 text-sm focus:ring-2 focus:ring-brand-orange focus:outline-none transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-get-started py-3.5 rounded-xl font-bold text-center">Transmit Request Box</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Full-Width Map Container -->
+            <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 h-96">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8866632770423!2d70.6799502!3d22.320125699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cfabc5b07859%3A0x8dde64c1c483cf0f!2sSudarshan%20Planeta%20Corporation%20LLP!5e0!3m2!1sen!2sin!4v1717056000000!5m2!1sen!2sin" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>[cite: 1]
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
